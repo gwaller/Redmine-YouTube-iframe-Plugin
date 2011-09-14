@@ -1,0 +1,36 @@
+YouTube iframe Plugin for Redmine
+=================================
+
+This work was originally based on the openecho YouTube plugin: https://github.com/openecho/redmine_youtube
+
+Description
+===========
+
+This plugin allows a YouTube to be embedded in a RedMine wiki page using the iframe HTML element. 
+
+Installation
+============
+
+- Download the code from GitHub 
+- Copy the "Redmine-YouTube-iframe-Plugin" directory to <redmine_home>/vendor/plugins
+- Restart redmine
+
+Usage
+=====
+
+{{youtube_iframe(<video id>[<width>,<height>,<hd>,<start>])}}
+
+e.g.
+
+{{youtube_iframe(G2AC0LuIkCo, 640, 390, yes, 0)}}
+
+The <video id> parameter is the only mandatory parameter.
+
+Optional parameters:
+
+<width> - specifies the width in pixels the iframe should be
+<height> - specifies the height in pixels the iframe should be
+<hd> - boolean indicating if the YouTube player should allow the user to change video quality and select HD sources if available. See http://code.google.com/apis/youtube/player_parameters.html#hd
+<start> - specifies a time in seconds the video should start playing from
+
+
